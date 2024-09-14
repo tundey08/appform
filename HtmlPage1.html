@@ -1,0 +1,151 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Application Form</title>
+    <style>
+        body {
+            font-family: Calibri, Arial, Helvetica, sans-serif;
+            display: flex;
+            color: white;
+            justify-content: center;
+            text-align: left;
+            margin: 0;
+        }
+
+        .container {
+            padding: 20px;
+            background-color: firebrick;
+            text-align: left;
+        }
+
+        label {
+            font-weight: bold;
+            display: inline-block;
+            width: 30%;
+            margin-bottom: 8px;
+        }
+
+        input[type=text], input[type=password],
+        textarea {
+            width: 29%;
+            padding: 10px;
+            margin-bottom: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            display: inline-block;
+        }
+
+            input[type=text]:focus, input[type=password]:focus {
+                background-color: bisque;
+                outline: none;
+            }
+
+        div {
+            padding: 10px 0px;
+        }
+
+        hr {
+            border: 1px solid #f1f1f1;
+            margin-bottom: 25px;
+        }
+
+        .btnsubmit {
+            align-content: center;
+        }
+
+        .btnreset {
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <div class="container">
+            <center><h1>Application Form</h1></center>
+            <hr />
+            <label>First Name</label>
+            <input type="text" name="firstname" placeholder="Enter First Name" size="8" required /> (max 50 characters Allowed)<br />
+            <label>Last Name</label>
+            <input type="text" name="lastname" placeholder="Enter Last Name" size="8" required /> (max 50 characters Allowed)<br />
+            <label>Email ID</label>
+            <input type="text" name="emailid" placeholder="Enter Valid Email-ID" size="8" required /><br />
+            <label>Mobile Number</label>
+            <input type="text" name="mobilenumber" placeholder="Country Code" value="+1" required /> (10 Digit Allowed)
+            <div>
+                <label>Gender:</label> <br />
+                <input type="radio" value="Male" name="gender" checked /> Male
+                <input type="radio" value="Female" name="gender" /> Female
+                <div>
+                    <label>Date of Birth(DOB)</label>
+                    <input type="date" name=dateofbirth />
+                </div>
+                <div>
+                    <label for="address">Address</label>
+                    <textarea cols="80" rows="5" placeholder="Enter Address" required></textarea>
+                </div>
+            </div>
+            <div>
+                <label>City</label>
+                <input type="text" name="city" placeholder="Enter City" size="8" required /> (Max 50 Characters Allowed)
+            </div>
+            <div>
+                <label>Pin Code</label>
+                <input type="text" name="pincode" placeholder="Enter Valid Pin Code" size="15" required /> (Max 6 Numbers Allowed)
+            </div>
+            <div>
+                <label>State</label>
+                <input type="text" name="state" placeholder="Enter State" size="15" required /> (Max 50 Characters Allowed)
+            </div>
+            <label>Country</label>
+            <input type="text" name="country" placeholder="Enter Country" size="15" required />
+            <div>
+                <label>Hobbies</label>
+                <input type="checkbox" value=" Drawing" name=" hobbies" />  Drawing
+                <input type="checkbox" value=" Singing" name=" hobbies" />  Singing
+                <input type="checkbox" value=" Dancing" name=" hobbies" />  Dancing
+                <input type="checkbox" value=" Sketching" name=" hobbies" />  Sketching
+                <input type="checkbox" value=" Others" name=" hobbies" />  Other
+                <br />
+                <div>
+                    <label>Qualification</label>
+                    <br />
+                    <input type="checkbox" value="High School" name="qualification" /> High School(10th) <br />
+
+                    <input type="checkbox" value="Higher School" name="qualification" /> Higher School(12th) <br />
+
+                    <input type="checkbox" value="Graduation" name="qualification" /> Graduations(Bachelors) <br />
+
+                    <input type="checkbox" value="Post Graduation" name="qualification" /> Post Graduation(10th) <br />
+
+                    <input type="checkbox" value="Phd" name="qualification" /> Phd <br />
+                </div>
+                <br />
+                <label> Courses Applied For</label>
+                <br />
+                <input type="checkbox" value="BCA" name="courses" /> BCA(Bachelor of Computer Application) <br />
+
+                <input type="checkbox" value="Bcom" name="courses" /> B.Com(Bachelor of Commerce) <br />
+
+                <input type="checkbox" value="Bsc" name="courses" /> Bsc(Bachelor of Science) <br />
+
+                <input type="checkbox" value="Ba" name="courses" /> BA(Bachelor of Arts) <br />
+
+                <input type="checkbox" value="Mca" name="courses" /> MCA(Master of Computer Application) <br />
+
+                <input type="checkbox" value="Mcom" name="courses" /> M.Com(Master of Commerce) <br />
+
+                <input type="checkbox" value="Msc" name="courses" /> Msc(Master of science) <br />
+
+                <input type="checkbox" value="Ma" name="courses" /> MA(Master of Arts) <br />
+
+                <button type="submit" class="btnsubmit">Submit</button>
+                <button type="reset" class="btnreset">Reset</button>
+            </div>
+        </div>
+    </form>
+
+
+</body>
+</html>
